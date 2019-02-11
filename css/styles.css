@@ -1,3 +1,15 @@
+:root {
+    --light-board: #F5F6F8;
+    --title-board: #9FA6B5;
+    --dark-gray: #22272B;
+    --darker-gray: #181C1F;
+    --beige: #FFF8E5;
+    --yellow: #EFC03C;
+
+    --medium: 500;
+    --semibold: 600;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,4 +17,9 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
 }

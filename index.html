@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
     <link rel="stylesheet" href="css/partials/header.css">
+    <link rel="stylesheet" href="css/partials/board.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="js/index.js"></script>
@@ -30,8 +31,25 @@
             </ul>
         </nav>
     </header>
-    <section class="onboard">
-        
-    </section>
+    <main>
+        <section class="onboard">
+            <h2 class="heading">On board</h2>
+            <section class="graph">
+                <canvas id="onboard-canvas"></canvas>
+            </section>
+            <section class="data-static">
+                <article class="data-holder">
+                    <h3>Passengers</h3>
+                    <p>120</p>
+                </article>
+                <article class="data-holder">
+                    <h3>Crew</h3>
+                    <p>20</p>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <script src="js/data.js"></script>
 </body>
 </html>

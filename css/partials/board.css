@@ -1,0 +1,50 @@
+.onboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.onboard > h2 {
+    width: 100%;
+}
+
+.graph, .data-holder {
+    border-radius: 3px;
+}
+
+.graph {
+    width: 100%;
+    background-color: var(--light-board);
+    margin-top: 20px;
+}
+
+.data-static {
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.data-holder {
+    font-size: 18px;
+    width: 46%;
+    background-color: var(--light-board);
+}
+
+.data-holder > h3, .data-holder > p {
+    padding-left: 20px;
+}
+
+.data-holder > h3 {
+    color: var(--title-board);
+    padding-top: 15px;
+
+}
+
+.data-holder > p {
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    font-size: 34px;
+    color: #111;
+}
