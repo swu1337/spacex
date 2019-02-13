@@ -1,11 +1,13 @@
-.onboard {
+.card {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
-.onboard > h2 {
+.card > h2 {
     width: 100%;
+    font-size: 30px;
 }
 
 .graph, .data-holder {
@@ -13,6 +15,7 @@
 }
 
 .graph {
+    position: relative;
     width: 100%;
     background-color: var(--light-board);
     margin-top: 20px;
@@ -23,28 +26,41 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .data-holder {
-    font-size: 18px;
+    font-size: 16px;
     width: 46%;
     background-color: var(--light-board);
 }
 
 .data-holder > h3, .data-holder > p {
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .data-holder > h3 {
     color: var(--title-board);
     padding-top: 15px;
-
 }
 
 .data-holder > p {
     font-weight: bold;
-    padding-top: 1px;
+    padding-top: 2px;
     padding-bottom: 15px;
-    font-size: 34px;
+    font-size: 32px;
     color: #111;
+    font-weight: var(--bold);
 }
+
+.data-static  p > i {
+    font-size: 24px;
+    padding-right: 5px;
+}
+
+.primary-card {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+}
+
+/*box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.3);*/

@@ -6,8 +6,10 @@
     --beige: #FFF8E5;
     --yellow: #EFC03C;
 
-    --medium: 500;
-    --semibold: 600;
+    --regular: 400;
+    --semi-bold: 600;
+    --bold: 700;
+    --black: 900;
 }
 
 * {
