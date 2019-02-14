@@ -1,6 +1,4 @@
 window.onload = () => {
-    console.log(`SpaceX in your face`);
-
     document.querySelector('.menu').onclick = () => {
         let header = document.querySelector('header');
         console.log(header);
@@ -16,4 +14,4 @@ window.onload = () => {
             icn.classList.add('fa-times');
         }
     }
-}
+};

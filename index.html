@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900">
     <link rel="stylesheet" href="css/partials/header.css">
     <link rel="stylesheet" href="css/partials/board.css">
+    <link rel="stylesheet" href="css/partials/colors.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="js/index.js"></script>
@@ -25,46 +26,62 @@
         <nav>
             <ul class="fa-ul">
                 <li><span class="fa-li"><i class="fas fa-tachometer-alt"></i></span>Dashboard</li>
-                <li><span class="fa-li"><i class="fas fa-rocket"></i></span>Fuel</li>
-                <li><span class="fa-li"><i class="fas fa-chart-line"></i></span>Distance/Time</li>
+                <li><span class="fa-li"><i class="fas fa-burn"></i></span>Power</li>
+                <li><span class="fa-li"><i class="fas fa-chart-line"></i></span>Surroundings</li>
                 <li><span class="fa-li"><i class="fas fa-hamburger"></i></span>Supply</li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="card">
-            <h2 class="heading">On board</h2>
+            <h2 class="heading">Travelers</h2>
             <section class="graph">
                 <canvas id="onboard-canvas"></canvas>
             </section>
             <section class="data-static">
-                <article class="data-holder">
+                <article class="data-holder static-red">
                     <h3>Passengers</h3>
                     <p><i class="fas fa-user"></i>120</p>
                 </article>
-                <article class="data-holder">
+                <article class="data-holder static-black">
                     <h3>Crew</h3>
                     <p><i class="fas fa-user-astronaut"></i>20</p>
                 </article>
             </section>
         </section>
         <section class="card">
-            <h2 class="heading">Fuel</h2>
+            <h2 class="heading">Power</h2>
             <section class="graph">
                 <canvas id="fuel-canvas"></canvas>
             </section>
             <section class="data-static">
                 <article class="data-holder primary-card">
                     <h3>Speed</h3>
-                    <p><i class="fas fa-user"></i>120 m/s</p>
+                    <p><i class="fas fa-tachometer-alt"></i>56 km/s</p>
                 </article>
-                <article class="data-holder">
+                <article class="data-holder static-purple">
                     <h3>Acceleration</h3>
-                    <p><i class="fas fa-user"></i>120 m/s</p>
+                    <p><i class="fas fa-bolt"></i>120 km/s</p>
+                </article>
+                <article class="data-holder static-purple">
+                    <h3>G-Force</h3>
+                    <p><i class="fab fa-gofore"></i>93 G</p>
+                </article>
+            </section>
+        </section>
+         <section class="card">
+            <h2 class="heading">Surroundings</h2>
+            <section class="graph line-graph">
+                <canvas id="distance-canvas"></canvas>
+            </section>
+            <section class="data-static">
+                <article class="data-holder">
+                    <h3>Gravity</h3>
+                    <p><i class="fas fa-magnet"></i>9.81 m/s</p>
                 </article>
                 <article class="data-holder">
-                    <h3>G-Force</h3>
-                    <p><i class="fas fa-user"></i>93G</p>
+                    <h3>Atmosphere</h3>
+                    <p><i class="fas fa-cloud-meatball"></i>200 Pa</p>
                 </article>
             </section>
         </section>
