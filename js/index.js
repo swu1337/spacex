@@ -1,7 +1,6 @@
 window.onload = () => {
     document.querySelector('.menu').onclick = () => {
         let header = document.querySelector('header');
-        console.log(header);
         let icn = document.querySelector('.icn-menu');
 
         if (header.classList.contains('open')) {

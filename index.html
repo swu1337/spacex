@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="css/partials/board.css">
     <link rel="stylesheet" href="css/partials/colors.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/scroll.js"></script>
 </head>
 <body>
     <header>
@@ -25,10 +27,10 @@
         </section>
         <nav>
             <ul class="fa-ul">
-                <li><span class="fa-li"><i class="fas fa-tachometer-alt"></i></span>Dashboard</li>
-                <li><span class="fa-li"><i class="fas fa-burn"></i></span>Power</li>
-                <li><span class="fa-li"><i class="fas fa-chart-line"></i></span>Surroundings</li>
-                <li><span class="fa-li"><i class="fas fa-hamburger"></i></span>Supply</li>
+                <li><a class="anchor" href=""><span class="fa-li"><i class="fas fa-tachometer-alt"></i></span>Dashboard</a></li>
+                <li><a class="anchor" href="#power"><span class="fa-li"><i class="fas fa-burn"></i></span>Power</a></li>
+                <li><a class="anchor" href="#surroundings"><span class="fa-li"><i class="fas fa-chart-line"></i></span>Surroundings</a></li>
+                <li><a class="anchor" href="#supply"><span class="fa-li"><i class="fas fa-hamburger"></i></span>Supply</a></li>
             </ul>
         </nav>
     </header>
@@ -49,9 +51,9 @@
                 </article>
             </section>
         </section>
-        <section class="card">
+        <section class="card" id="power">
             <h2 class="heading">Power</h2>
-            <section class="graph">
+            <section class="graph line-graph">
                 <canvas id="fuel-canvas"></canvas>
             </section>
             <section class="data-static">
@@ -61,27 +63,47 @@
                 </article>
                 <article class="data-holder static-purple">
                     <h3>Acceleration</h3>
-                    <p><i class="fas fa-bolt"></i>120 km/s</p>
+                    <p><i class="fas fa-bolt"></i>90 km/s</p>
                 </article>
-                <article class="data-holder static-purple">
+                <article class="data-holder static-d-purple">
                     <h3>G-Force</h3>
                     <p><i class="fab fa-gofore"></i>93 G</p>
                 </article>
             </section>
         </section>
-         <section class="card">
+        <section class="card" id="surroundings">
             <h2 class="heading">Surroundings</h2>
             <section class="graph line-graph">
                 <canvas id="distance-canvas"></canvas>
             </section>
             <section class="data-static">
-                <article class="data-holder">
+                <article class="data-holder static-brown">
                     <h3>Gravity</h3>
                     <p><i class="fas fa-magnet"></i>9.81 m/s</p>
                 </article>
-                <article class="data-holder">
+                <article class="data-holder static-orange">
                     <h3>Atmosphere</h3>
                     <p><i class="fas fa-cloud-meatball"></i>200 Pa</p>
+                </article>
+            </section>
+        </section>
+        <section class="card" id="supply">
+            <h2 class="heading">Supply</h2>
+            <section class="graph line-graph">
+                <canvas id="supply-canvas"></canvas>
+            </section>
+            <section class="data-static">
+                <article class="data-holder primary-card gradient-green">
+                    <h3>Food</h3>
+                    <p><i class="fas fa-utensils"></i>70%</p>
+                </article>
+                <article class="data-holder primary-card">
+                    <h3>Water</h3>
+                    <p><i class="fas fa-tint"></i>80%</p>
+                </article>
+                <article class="data-holder primary-card gradient-blue">
+                    <h3>Oxygen</h3>
+                    <p><i class="fas fa-atom"></i>95%</p>
                 </article>
             </section>
         </section>

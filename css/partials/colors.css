@@ -6,10 +6,26 @@
     background-color: #212121;
 }
 
-.static-yellow {
-    background-color: yellow;
+.static-brown {
+    background-color: #3a3023;
+}
+
+.static-orange {
+    background-color: #ff8944;
 }
 
 .static-purple {
-    background-color: #4f469a;
+    background-color: #706cf1;
+}
+
+.static-d-purple {
+    background-color: #4d5994;
+}
+
+.gradient-green {
+    background-image: linear-gradient(-45deg, #6befab 10%, #00dcff);
+}
+
+.gradient-blue{
+    background-image: linear-gradient(-45deg, #dfabff 10%,#018dc8);
 }
