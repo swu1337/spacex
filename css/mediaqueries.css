@@ -46,34 +46,33 @@
         flex-direction: column;
     }
 
-    .travelers .graph {
+    .data-holder {
+        width: 100%;
+    }
+
+    .side-by-side .graph {
         height: 380px;
     }
 
-    .travelers .data-static {
-        justify-content: space-between;
-    }
-
-    .travelers .data-holder {
-        width: initial;
+    .side-by-side .data-holder {
         font-size: 28px;
     }
 
-    .travelers .data-holder > h3 {
+    .side-by-side .data-holder > h3 {
         padding-top: 40px;
     }
 
-    .travelers .data-holder > p {
+    .side-by-side .data-holder > p {
         padding-bottom: 40px;
         font-size: 35px;
         padding-top: 12px;
     }
 
-    .travelers .data-holder > h3, .travelers .data-holder > p {
+    .side-by-side .data-holder > h3, .side-by-side .data-holder > p {
         padding-left: 32px;
     }
 
-    .travelers .data-holder > p > i {
+    .side-by-side .data-holder > p > i {
         font-size: 34px;
         padding-right: 10px;
     }
@@ -88,28 +87,40 @@
 
     .reverse .data-static {
         width: 40%;
-        flex-wrap: nowrap;
-        align-self: flex-start;
     }
 
     .reverse .data-holder {
-        width: 100%;
         font-size: 20px;
     }
 
-    .reverse .data-static .data-holder:nth-child(2) {
-        margin-bottom: 7px;
-    }
-
     .reverse .data-holder.sub-data > p {
-        font-size: 34px;
+        font-size: 30px;
     }
 
     .reverse .data-holder.sub-data > p > i {
         font-size: 29px;
         padding-right: 8px;
     }
-}
+
+    .reverse .sub-data > h3, .reverse .sub-data > p {
+        padding-left: 34px;
+    }
+
+    .reverse .sub-data > h3 {
+        padding-top: 21px;
+    }
+
+    .reverse .sub-data > p {
+        padding-bottom: 21px;
+    }
+
+    .primary-card {
+        margin: 0;
+    }
+    
+    .graph.bar-graph {
+        height: 485px;
+    }
 
 @media only screen and (min-width: 1366px) {
 

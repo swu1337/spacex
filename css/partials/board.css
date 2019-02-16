@@ -24,7 +24,7 @@
     height: 280px;
 }
 
-.graph.line-graph {
+.graph.line-graph, .graph.bar-graph {
     height: 400px;
 }
 
@@ -65,7 +65,7 @@
 
 .primary-card {
     color: white;
-    flex-basis: 100%;
+    width: 100%;
     margin-bottom: 25px;
     background-image: linear-gradient(-45deg, #80CCF3 10%, #4b01ff);
 }
@@ -89,4 +89,8 @@
 
 .primary-card > h3, .primary-card > p {
     padding-left: 35px;
+}
+
+.column {
+    flex-direction: column;
 }
