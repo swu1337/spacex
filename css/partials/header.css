@@ -24,7 +24,8 @@ li {
 nav {
     width: 100%;
     display: flex;
-    margin-top: 60px;
+    padding-top: 60px;
+    padding-left: 20px;
 }
 
 .header {

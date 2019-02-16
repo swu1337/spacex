@@ -1,0 +1,120 @@
+@media only screen and (min-width: 768px) {
+    /* Navigation */
+    header {
+        height: 100px;
+    }
+
+    nav {
+        padding-top: 73px;
+    }
+
+    ul {
+        font-size: 34px;
+    }
+
+    li {
+        margin-bottom: 25px;
+    }
+
+    .open {
+        height: 430px;
+    }
+
+    .logo-holder {
+        width: 280px;
+    }
+
+    .header {
+        margin-top: 27px;
+    }
+
+    .menu {
+        font-size: 46px;
+    }
+    /*End Navigation*/
+
+    .card {
+        justify-content: space-between;
+    }
+
+    .graph {
+        width: 60%;
+    }
+
+    .data-static {
+        width: 35%;
+        flex-direction: column;
+    }
+
+    .travelers .graph {
+        height: 380px;
+    }
+
+    .travelers .data-static {
+        justify-content: space-between;
+    }
+
+    .travelers .data-holder {
+        width: initial;
+        font-size: 28px;
+    }
+
+    .travelers .data-holder > h3 {
+        padding-top: 40px;
+    }
+
+    .travelers .data-holder > p {
+        padding-bottom: 40px;
+        font-size: 35px;
+        padding-top: 12px;
+    }
+
+    .travelers .data-holder > h3, .travelers .data-holder > p {
+        padding-left: 32px;
+    }
+
+    .travelers .data-holder > p > i {
+        font-size: 34px;
+        padding-right: 10px;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .reverse .graph {
+        width: 55%;
+    }
+
+    .reverse .data-static {
+        width: 40%;
+        flex-wrap: nowrap;
+        align-self: flex-start;
+    }
+
+    .reverse .data-holder {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .reverse .data-static .data-holder:nth-child(2) {
+        margin-bottom: 7px;
+    }
+
+    .reverse .data-holder.sub-data > p {
+        font-size: 34px;
+    }
+
+    .reverse .data-holder.sub-data > p > i {
+        font-size: 29px;
+        padding-right: 8px;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+}

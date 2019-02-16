@@ -41,7 +41,12 @@ let onboardPie = new Chart(onboardCtx, {
         ]
     },
     options: {
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
+        title : {
+            display: true,
+            text: 'Travelers on board',
+            fontSize: 26
+        }
     }
 });
 

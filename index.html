@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/partials/board.css">
     <link rel="stylesheet" href="css/partials/colors.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="js/index.js"></script>
@@ -35,9 +36,9 @@
         </nav>
     </header>
     <main>
-        <section class="card">
+        <section class="card travelers">
             <h2 class="heading">Travelers</h2>
-            <section class="graph">
+            <section class="graph line-graph">
                 <canvas id="onboard-canvas"></canvas>
             </section>
             <section class="data-static">
@@ -51,7 +52,7 @@
                 </article>
             </section>
         </section>
-        <section class="card" id="power">
+        <section class="card reverse" id="power">
             <h2 class="heading">Power</h2>
             <section class="graph line-graph">
                 <canvas id="fuel-canvas"></canvas>
@@ -61,17 +62,17 @@
                     <h3>Speed</h3>
                     <p><i class="fas fa-tachometer-alt"></i>56 km/s</p>
                 </article>
-                <article class="data-holder static-purple">
+                <article class="data-holder sub-data static-purple">
                     <h3>Acceleration</h3>
                     <p><i class="fas fa-bolt"></i>90 km/s</p>
                 </article>
-                <article class="data-holder static-d-purple">
+                <article class="data-holder sub-data static-d-purple">
                     <h3>G-Force</h3>
                     <p><i class="fab fa-gofore"></i>93 G</p>
                 </article>
             </section>
         </section>
-        <section class="card" id="surroundings">
+        <section class="card travelers" id="surroundings">
             <h2 class="heading">Surroundings</h2>
             <section class="graph line-graph">
                 <canvas id="distance-canvas"></canvas>
