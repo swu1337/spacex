@@ -31,7 +31,7 @@
     .menu {
         font-size: 46px;
     }
-    /*End Navigation*/
+    /* End Navigation */
 
     .card {
         justify-content: space-between;
@@ -230,8 +230,6 @@
         width: 80%;
         margin: 0 auto;
     }
-
-
     /* End Navigation */
 
     .side-by-side .graph.line-graph{

@@ -3,7 +3,6 @@ let fuelCtx = document.querySelector('#fuel-canvas').getContext('2d');
 let distanceCtx = document.querySelector('#distance-canvas').getContext('2d');
 let supplyCtx = document.querySelector('#supply-canvas').getContext('2d');
 
-
 Chart.defaults.global.defaultFontFamily = 'Source Sans Pro';
 Chart.defaults.global.defaultFontSize = 20;
 Chart.defaults.global.legend.fontStyle = 'bold';
@@ -14,7 +13,7 @@ Chart.defaults.global.layout = {
     }
 }
 
-/*Hacks Adding white space between legends and the graph*/ 
+/* Hacks Adding white space between legends and the graph */ 
 Chart.plugins.register({
     id: 'paddingBelowLegends',
     beforeInit: function(chart, options) {
