@@ -121,11 +121,120 @@
     .graph.bar-graph {
         height: 485px;
     }
+}
 
 @media only screen and (min-width: 1366px) {
+    /* Navigation */
+    header {
+        height: 100vh;
+        width: var(--sidebar-width);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
 
+    ul {
+        font-size: 21px;
+        font-weight: var(--bold);
+    }
+
+    li {
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header {
+        margin-top: 50px;
+    }
+
+    .logo-holder {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* End Navigation */
+
+    main {
+        margin-left: var(--sidebar-width);
+    }
+
+    .graph {
+        width: 65%;
+    }
+
+    .side-by-side .data-holder {
+        font-size: 20px;
+    }
+
+    .side-by-side .data-holder > p {
+        font-size: 40px;
+    }
+
+    .side-by-side .data-holder > p > i {
+        font-size: 36px;
+    }
+
+    .data-static {
+        width: 30%;
+    }
+
+    .side-by-side .data-holder > h3, .side-by-side .data-holder > p {
+        padding-left: 35px;
+    }
+
+    .reverse .graph {
+        width: 65%;
+    }
+
+    .reverse .data-static {
+        width: 30%;
+    }
+
+    .reverse .graph.line-graph {
+        height: 435px;
+    }
+
+    .reverse .graph.bar-graph {
+        height: 525px;
+    }
+
+    .card > h2 {
+        padding-top: 20px;
+        font-size: 38px;
+    }
 }
 
 @media only screen and (min-width: 1920px) {
+    .dashboard {
+        max-width: 1366px;
+    }
 
+    /* Navigation */
+    :root {
+        --sidebar-width: 310px;
+    }
+
+    ul {
+        font-size: 26px;
+    }
+
+    .header {
+        margin-top: 70px;
+    }
+
+    .logo-holder {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    /* End Navigation */
+
+    .side-by-side .graph.line-graph{
+        height: 410px;
+    }
 }

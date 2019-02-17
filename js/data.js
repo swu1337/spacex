@@ -142,7 +142,7 @@ let supplyBar = new Chart(supplyCtx, {
         },
         tooltips: {
             callbacks: {
-                label: ((tooltipItems, data) => `${tooltipItems.yLabel} %`)
+                label: ((tooltipItems, data) => `${tooltipItems.yLabel}%`)
             }
         }
     }
